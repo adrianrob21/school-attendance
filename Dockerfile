@@ -4,15 +4,15 @@ RUN apt-get update \
   && apt-get install -y --no-install-recommends python3 python3-venv python3-pip ca-certificates \
   && rm -rf /var/lib/apt/lists/*
 
-# Run as a non-root user.
-RUN useradd -m -u 1000 app
-USER app
-WORKDIR /home/app
+# The node image already provides an unprivileged "node" user.
+RUN mkdir -p /home/node/app && chown node:node /home/node/app
+USER node
+WORKDIR /home/node/app
 
-COPY --chown=app:app package.json yarn.lock ./
+COPY --chown=node:node package.json yarn.lock ./
 RUN yarn install --frozen-lockfile
 
-COPY --chown=app:app . .
+COPY --chown=node:node . .
 
 # Downloads and checksum-verifies the Raluca model, then builds the SPA.
 RUN yarn voice:setup && yarn build
