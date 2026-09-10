@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "DynaPuff";
+  font-style: normal;
+  font-weight: 400 700;
+  font-stretch: 75% 100%;
+  font-display: swap;
+  src: url("./dynapuff-variable.ttf") format("truetype");
+}
+
+:root {
+  --font-playful: "DynaPuff", "Arial Rounded MT Bold", sans-serif;
+  --color-ink: #2d211e;
+}

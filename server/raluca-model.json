@@ -1,0 +1,18 @@
+{
+  "voiceId": "raluca-high-v3",
+  "name": "Raluca High",
+  "creator": "eduardem",
+  "source": "https://huggingface.co/eduardem/piper-tts-romanian",
+  "license": "CC-BY-NC-4.0",
+  "revision": "f93649603281c4d6a1c0b59ee7c3033e9a8248a1",
+  "files": [
+    {
+      "name": "ro_RO-raluca-high.onnx",
+      "sha256": "16de07599d05f0bf4f548bc1a4a452feb0285c78ffa3fcb45d5154be2dd3a1f0"
+    },
+    {
+      "name": "ro_RO-raluca-high.onnx.json",
+      "sha256": "bb70ba2e0181a3d98050020ea3531a279f96afd72cc86d571cf5de0920383f46"
+    }
+  ]
+}

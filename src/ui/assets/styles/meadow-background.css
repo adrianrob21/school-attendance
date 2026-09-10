@@ -1,0 +1,73 @@
+.meadow-background {
+  --meadow-tablet: url("/assets/backgrounds/group-selection-summer-tablet.png");
+  --meadow-tablet-landscape: url("/assets/backgrounds/group-selection-summer-tablet-landscape.png");
+  --meadow-landscape: url("/assets/backgrounds/group-selection-summer.png");
+  --meadow-desktop: url("/assets/backgrounds/group-selection-summer-desktop.png");
+  --meadow-ultrawide: url("/assets/backgrounds/group-selection-summer-ultrawide.png");
+  --meadow-image: var(--meadow-tablet-landscape);
+
+  position: relative;
+  isolation: isolate;
+  background-color: #fffaf0;
+}
+
+.meadow-background[data-season="spring"] {
+  --meadow-tablet: url("/assets/backgrounds/group-selection-spring-tablet.png");
+  --meadow-tablet-landscape: url("/assets/backgrounds/group-selection-spring-tablet-landscape.png");
+  --meadow-landscape: url("/assets/backgrounds/group-selection-spring.png");
+  --meadow-desktop: url("/assets/backgrounds/group-selection-spring-desktop.png");
+  --meadow-ultrawide: url("/assets/backgrounds/group-selection-spring-ultrawide.png");
+}
+
+.meadow-background[data-season="autumn"] {
+  --meadow-tablet: url("/assets/backgrounds/group-selection-autumn-tablet.png");
+  --meadow-tablet-landscape: url("/assets/backgrounds/group-selection-autumn-tablet-landscape.png");
+  --meadow-landscape: url("/assets/backgrounds/group-selection-autumn.png");
+  --meadow-desktop: url("/assets/backgrounds/group-selection-autumn-desktop.png");
+  --meadow-ultrawide: url("/assets/backgrounds/group-selection-autumn-ultrawide.png");
+}
+
+.meadow-background[data-season="winter"] {
+  --meadow-tablet: url("/assets/backgrounds/group-selection-winter-tablet.png");
+  --meadow-tablet-landscape: url("/assets/backgrounds/group-selection-winter-tablet-landscape.png");
+  --meadow-landscape: url("/assets/backgrounds/group-selection-winter.png");
+  --meadow-desktop: url("/assets/backgrounds/group-selection-winter-desktop.png");
+  --meadow-ultrawide: url("/assets/backgrounds/group-selection-winter-ultrawide.png");
+}
+
+.meadow-background::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  background-color: inherit;
+  background-image: var(--meadow-image);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  pointer-events: none;
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+  .meadow-background {
+    --meadow-image: var(--meadow-tablet);
+  }
+}
+
+@media (min-aspect-ratio: 7 / 5) {
+  .meadow-background {
+    --meadow-image: var(--meadow-landscape);
+  }
+}
+
+@media (min-aspect-ratio: 5 / 3) {
+  .meadow-background {
+    --meadow-image: var(--meadow-desktop);
+  }
+}
+
+@media (min-aspect-ratio: 9 / 4) {
+  .meadow-background {
+    --meadow-image: var(--meadow-ultrawide);
+  }
+}

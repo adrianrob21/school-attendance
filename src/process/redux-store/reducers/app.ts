@@ -35,7 +35,7 @@ export const appSlice = createSlice({
     decrement: decrementAction,
     increment: incrementAction,
     incrementByAmount: incrementByAmountAction,
-    incrementWithSaga: () => {},
+    incrementWithSaga: (_state: AppState, _action: PayloadAction<number>) => {},
     updateAppProps: updateProps,
   },
 });

@@ -1,0 +1,507 @@
+.animated-ladybug {
+  display: block;
+  inline-size: 100%;
+  aspect-ratio: 1;
+  background-image: url("/assets/welcome/ladybug-video-atlas.webp");
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: 1000% 1200%;
+  animation: ladybug-video-frames 10s step-end infinite;
+}
+
+@keyframes ladybug-video-frames {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  0.833333% {
+    background-position: 11.111111% 0%;
+  }
+
+  1.666667% {
+    background-position: 22.222222% 0%;
+  }
+
+  2.5% {
+    background-position: 33.333333% 0%;
+  }
+
+  3.333333% {
+    background-position: 44.444444% 0%;
+  }
+
+  4.166667% {
+    background-position: 55.555556% 0%;
+  }
+
+  5% {
+    background-position: 66.666667% 0%;
+  }
+
+  5.833333% {
+    background-position: 77.777778% 0%;
+  }
+
+  6.666667% {
+    background-position: 88.888889% 0%;
+  }
+
+  7.5% {
+    background-position: 100% 0%;
+  }
+
+  8.333333% {
+    background-position: 0% 9.090909%;
+  }
+
+  9.166667% {
+    background-position: 11.111111% 9.090909%;
+  }
+
+  10% {
+    background-position: 22.222222% 9.090909%;
+  }
+
+  10.833333% {
+    background-position: 33.333333% 9.090909%;
+  }
+
+  11.666667% {
+    background-position: 44.444444% 9.090909%;
+  }
+
+  12.5% {
+    background-position: 55.555556% 9.090909%;
+  }
+
+  13.333333% {
+    background-position: 66.666667% 9.090909%;
+  }
+
+  14.166667% {
+    background-position: 77.777778% 9.090909%;
+  }
+
+  15% {
+    background-position: 88.888889% 9.090909%;
+  }
+
+  15.833333% {
+    background-position: 100% 9.090909%;
+  }
+
+  16.666667% {
+    background-position: 0% 18.181818%;
+  }
+
+  17.5% {
+    background-position: 11.111111% 18.181818%;
+  }
+
+  18.333333% {
+    background-position: 22.222222% 18.181818%;
+  }
+
+  19.166667% {
+    background-position: 33.333333% 18.181818%;
+  }
+
+  20% {
+    background-position: 44.444444% 18.181818%;
+  }
+
+  20.833333% {
+    background-position: 55.555556% 18.181818%;
+  }
+
+  21.666667% {
+    background-position: 66.666667% 18.181818%;
+  }
+
+  22.5% {
+    background-position: 77.777778% 18.181818%;
+  }
+
+  23.333333% {
+    background-position: 88.888889% 18.181818%;
+  }
+
+  24.166667% {
+    background-position: 100% 18.181818%;
+  }
+
+  25% {
+    background-position: 0% 27.272727%;
+  }
+
+  25.833333% {
+    background-position: 11.111111% 27.272727%;
+  }
+
+  26.666667% {
+    background-position: 22.222222% 27.272727%;
+  }
+
+  27.5% {
+    background-position: 33.333333% 27.272727%;
+  }
+
+  28.333333% {
+    background-position: 44.444444% 27.272727%;
+  }
+
+  29.166667% {
+    background-position: 55.555556% 27.272727%;
+  }
+
+  30% {
+    background-position: 66.666667% 27.272727%;
+  }
+
+  30.833333% {
+    background-position: 77.777778% 27.272727%;
+  }
+
+  31.666667% {
+    background-position: 88.888889% 27.272727%;
+  }
+
+  32.5% {
+    background-position: 100% 27.272727%;
+  }
+
+  33.333333% {
+    background-position: 0% 36.363636%;
+  }
+
+  34.166667% {
+    background-position: 11.111111% 36.363636%;
+  }
+
+  35% {
+    background-position: 22.222222% 36.363636%;
+  }
+
+  35.833333% {
+    background-position: 33.333333% 36.363636%;
+  }
+
+  36.666667% {
+    background-position: 44.444444% 36.363636%;
+  }
+
+  37.5% {
+    background-position: 55.555556% 36.363636%;
+  }
+
+  38.333333% {
+    background-position: 66.666667% 36.363636%;
+  }
+
+  39.166667% {
+    background-position: 77.777778% 36.363636%;
+  }
+
+  40% {
+    background-position: 88.888889% 36.363636%;
+  }
+
+  40.833333% {
+    background-position: 100% 36.363636%;
+  }
+
+  41.666667% {
+    background-position: 0% 45.454545%;
+  }
+
+  42.5% {
+    background-position: 11.111111% 45.454545%;
+  }
+
+  43.333333% {
+    background-position: 22.222222% 45.454545%;
+  }
+
+  44.166667% {
+    background-position: 33.333333% 45.454545%;
+  }
+
+  45% {
+    background-position: 44.444444% 45.454545%;
+  }
+
+  45.833333% {
+    background-position: 55.555556% 45.454545%;
+  }
+
+  46.666667% {
+    background-position: 66.666667% 45.454545%;
+  }
+
+  47.5% {
+    background-position: 77.777778% 45.454545%;
+  }
+
+  48.333333% {
+    background-position: 88.888889% 45.454545%;
+  }
+
+  49.166667% {
+    background-position: 100% 45.454545%;
+  }
+
+  50% {
+    background-position: 0% 54.545455%;
+  }
+
+  50.833333% {
+    background-position: 11.111111% 54.545455%;
+  }
+
+  51.666667% {
+    background-position: 22.222222% 54.545455%;
+  }
+
+  52.5% {
+    background-position: 33.333333% 54.545455%;
+  }
+
+  53.333333% {
+    background-position: 44.444444% 54.545455%;
+  }
+
+  54.166667% {
+    background-position: 55.555556% 54.545455%;
+  }
+
+  55% {
+    background-position: 66.666667% 54.545455%;
+  }
+
+  55.833333% {
+    background-position: 77.777778% 54.545455%;
+  }
+
+  56.666667% {
+    background-position: 88.888889% 54.545455%;
+  }
+
+  57.5% {
+    background-position: 100% 54.545455%;
+  }
+
+  58.333333% {
+    background-position: 0% 63.636364%;
+  }
+
+  59.166667% {
+    background-position: 11.111111% 63.636364%;
+  }
+
+  60% {
+    background-position: 22.222222% 63.636364%;
+  }
+
+  60.833333% {
+    background-position: 33.333333% 63.636364%;
+  }
+
+  61.666667% {
+    background-position: 44.444444% 63.636364%;
+  }
+
+  62.5% {
+    background-position: 55.555556% 63.636364%;
+  }
+
+  63.333333% {
+    background-position: 66.666667% 63.636364%;
+  }
+
+  64.166667% {
+    background-position: 77.777778% 63.636364%;
+  }
+
+  65% {
+    background-position: 88.888889% 63.636364%;
+  }
+
+  65.833333% {
+    background-position: 100% 63.636364%;
+  }
+
+  66.666667% {
+    background-position: 0% 72.727273%;
+  }
+
+  67.5% {
+    background-position: 11.111111% 72.727273%;
+  }
+
+  68.333333% {
+    background-position: 22.222222% 72.727273%;
+  }
+
+  69.166667% {
+    background-position: 33.333333% 72.727273%;
+  }
+
+  70% {
+    background-position: 44.444444% 72.727273%;
+  }
+
+  70.833333% {
+    background-position: 55.555556% 72.727273%;
+  }
+
+  71.666667% {
+    background-position: 66.666667% 72.727273%;
+  }
+
+  72.5% {
+    background-position: 77.777778% 72.727273%;
+  }
+
+  73.333333% {
+    background-position: 88.888889% 72.727273%;
+  }
+
+  74.166667% {
+    background-position: 100% 72.727273%;
+  }
+
+  75% {
+    background-position: 0% 81.818182%;
+  }
+
+  75.833333% {
+    background-position: 11.111111% 81.818182%;
+  }
+
+  76.666667% {
+    background-position: 22.222222% 81.818182%;
+  }
+
+  77.5% {
+    background-position: 33.333333% 81.818182%;
+  }
+
+  78.333333% {
+    background-position: 44.444444% 81.818182%;
+  }
+
+  79.166667% {
+    background-position: 55.555556% 81.818182%;
+  }
+
+  80% {
+    background-position: 66.666667% 81.818182%;
+  }
+
+  80.833333% {
+    background-position: 77.777778% 81.818182%;
+  }
+
+  81.666667% {
+    background-position: 88.888889% 81.818182%;
+  }
+
+  82.5% {
+    background-position: 100% 81.818182%;
+  }
+
+  83.333333% {
+    background-position: 0% 90.909091%;
+  }
+
+  84.166667% {
+    background-position: 11.111111% 90.909091%;
+  }
+
+  85% {
+    background-position: 22.222222% 90.909091%;
+  }
+
+  85.833333% {
+    background-position: 33.333333% 90.909091%;
+  }
+
+  86.666667% {
+    background-position: 44.444444% 90.909091%;
+  }
+
+  87.5% {
+    background-position: 55.555556% 90.909091%;
+  }
+
+  88.333333% {
+    background-position: 66.666667% 90.909091%;
+  }
+
+  89.166667% {
+    background-position: 77.777778% 90.909091%;
+  }
+
+  90% {
+    background-position: 88.888889% 90.909091%;
+  }
+
+  90.833333% {
+    background-position: 100% 90.909091%;
+  }
+
+  91.666667% {
+    background-position: 0% 100%;
+  }
+
+  92.5% {
+    background-position: 11.111111% 100%;
+  }
+
+  93.333333% {
+    background-position: 22.222222% 100%;
+  }
+
+  94.166667% {
+    background-position: 33.333333% 100%;
+  }
+
+  95% {
+    background-position: 44.444444% 100%;
+  }
+
+  95.833333% {
+    background-position: 55.555556% 100%;
+  }
+
+  96.666667% {
+    background-position: 66.666667% 100%;
+  }
+
+  97.5% {
+    background-position: 77.777778% 100%;
+  }
+
+  98.333333% {
+    background-position: 88.888889% 100%;
+  }
+
+  99.166667% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.welcome-page[data-paused="true"] .animated-ladybug {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-ladybug {
+    animation: none;
+    background-position: 0% 0%;
+  }
+}

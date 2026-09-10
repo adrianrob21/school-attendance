@@ -1,4 +1,10 @@
-# React + TypeScript + Vite
+# Buburuzele
+
+The attendance voice uses **Raluca High**, running locally through Piper. Install the voice with `npm run voice:setup` (Python 3.9+ and internet access required for installation), then start the app with `npm start`. Rerun setup when upgrading from earlier voice versions to install phoneme timing support. Adding or renaming a child prepares and saves both Romanian attendance clips; attendance buttons play the saved recordings. Existing children have a **Pregătește vocea** action in the student list. Use it once to replace older recordings with the corrected word endings.
+
+See [voice setup and attribution](docs/todays-page.md#voice-setup) and [generated samples](docs/voice-samples/README.md). No speech-service API key is required.
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

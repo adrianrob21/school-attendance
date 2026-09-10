@@ -22,7 +22,7 @@ const Input = <T extends FieldValues>({
       {label && <label htmlFor={name}>{label}</label>}
       <input
         {...field}
-        className="border p-1"
+        className="min-h-12 w-full min-w-0 rounded-lg border px-3 py-2 text-base"
         id={name}
         placeholder={placeholder}
         type={type}

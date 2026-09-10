@@ -1,0 +1,166 @@
+.group-selection {
+  --group-card-width: 390px;
+  --group-card-art-height: clamp(170px, 29svh, 260px);
+  --group-card-padding: 24px;
+  --group-card-gap: 14px;
+  --group-card-title-size: clamp(34px, 5svh, 44px);
+
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: clamp(18px, 3svh, 32px);
+  min-height: 100svh;
+  padding: clamp(18px, 3.5svh, 44px) 24px;
+  color: var(--color-ink);
+  font-family: ui-rounded, "Trebuchet MS", sans-serif;
+}
+
+.group-selection__content {
+  display: grid;
+  align-self: center;
+  gap: clamp(20px, 3.5svh, 36px);
+  width: 100%;
+  min-width: 0;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.group-selection__header {
+  text-align: center;
+}
+
+.group-selection__header h1 {
+  margin: 0;
+  font-family: var(--font-playful);
+  font-size: clamp(36px, 4.7vw, 64px);
+  font-weight: 650;
+  letter-spacing: -0.045em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.group-selection__header p {
+  margin: 14px 0 0;
+  color: #6f5c4d;
+  font-size: 18px;
+  line-height: 1.5;
+  text-wrap: balance;
+}
+
+.group-selection__footer {
+  justify-self: center;
+  margin: 0;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgb(255 250 240 / 88%);
+  color: #6f5c4d;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (max-height: 700px) {
+  .group-selection {
+    --group-card-art-height: 155px;
+    --group-card-padding: 20px;
+    --group-card-gap: 12px;
+    --group-card-title-size: 34px;
+
+    gap: 14px;
+    padding-block: 16px;
+  }
+
+  .group-selection__content {
+    gap: 18px;
+  }
+
+  .group-selection__header h1 {
+    font-size: clamp(34px, 4.5vw, 48px);
+  }
+
+  .group-selection__header p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1366px) {
+  .group-selection {
+    --group-card-width: 440px;
+    --group-card-art-height: clamp(200px, 27svh, 300px);
+    --group-card-padding: 28px;
+    --group-card-gap: 18px;
+    --group-card-title-size: clamp(36px, 4.5vw, 44px);
+
+    gap: 24px;
+    padding: clamp(24px, 3.5svh, 44px) clamp(24px, 4vw, 48px);
+  }
+
+  .group-selection__content {
+    gap: clamp(24px, 3.5svh, 40px);
+  }
+
+  .group-selection__header h1 {
+    font-size: clamp(42px, 5.5vw, 60px);
+  }
+
+  .group-selection__header p {
+    margin-top: 14px;
+    font-size: 19px;
+  }
+
+  .group-selection__footer {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1366px) and (max-height: 820px) {
+  .group-selection {
+    --group-card-width: 400px;
+    --group-card-art-height: clamp(140px, 24svh, 196px);
+    --group-card-padding: 22px;
+    --group-card-gap: 12px;
+    --group-card-title-size: 36px;
+
+    gap: 18px;
+    padding-block: 20px;
+  }
+
+  .group-selection__content {
+    gap: 22px;
+  }
+
+  .group-selection__header h1 {
+    font-size: clamp(38px, 5vw, 52px);
+  }
+
+  .group-selection__header p {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .group-selection .group-carousel__navigation {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 599px) {
+  .group-selection {
+    --group-card-width: 340px;
+    --group-card-title-size: 34px;
+
+    padding-inline: 20px;
+  }
+
+  .group-selection__header p {
+    max-width: 290px;
+    margin-inline: auto;
+    font-size: 16px;
+  }
+
+  .group-selection .group-carousel__card .ui-button {
+    --button-padding: 20px;
+
+    font-size: 20px;
+  }
+}

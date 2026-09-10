@@ -1,0 +1,24 @@
+.student-avatar {
+  position: relative;
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 1190 / 990;
+}
+
+.student-avatar__body,
+.student-avatar__photo {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  overflow: visible;
+}
+
+.student-avatar__body {
+  mix-blend-mode: multiply;
+}
+
+.student-avatar__photo {
+  position: absolute;
+  inset: 0;
+}

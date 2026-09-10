@@ -1,0 +1,103 @@
+.ui-card {
+  --card-surface: #ffe0d7;
+  --card-highlight: #fff0e9;
+  --card-border: #f1bfb1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  min-width: 0;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--card-border);
+  border-radius: clamp(1.75rem, 4vw, 2.5rem);
+  background: radial-gradient(
+    ellipse at 35% 15%,
+    var(--card-highlight),
+    var(--card-surface) 85%
+  );
+  box-shadow:
+    inset 0 0 0 2px rgb(255 255 255 / 42%),
+    0 5px 0 rgb(117 61 30 / 5%),
+    0 12px 24px rgb(117 61 30 / 12%);
+  color: var(--color-ink, #2d211e);
+  text-align: center;
+}
+
+.ui-card--honey {
+  --card-surface: #ffebaf;
+  --card-highlight: #fff8d9;
+  --card-border: #e8cd83;
+}
+
+.ui-card--lavender {
+  --card-surface: #ead8f8;
+  --card-highlight: #f8edff;
+  --card-border: #d2b6e8;
+}
+
+.ui-card--sage {
+  --card-surface: #dfe9be;
+  --card-highlight: #f4f8df;
+  --card-border: #bdcf94;
+}
+
+.ui-card--cream {
+  --card-surface: #fff5e7;
+  --card-highlight: #fffcf7;
+  --card-border: #e8d6bd;
+}
+
+.ui-card[data-selected] {
+  box-shadow:
+    inset 0 0 0 2px rgb(255 255 255 / 65%),
+    0 0 0 2px var(--card-border),
+    0 7px 0 rgb(117 61 30 / 5%),
+    0 16px 28px rgb(117 61 30 / 16%);
+}
+
+.ui-card__illustration {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  place-items: center;
+  width: 100%;
+  height: var(--card-illustration-height, clamp(12rem, 25vw, 19rem));
+}
+
+.ui-card__illustration > img,
+.ui-card__illustration > svg {
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ui-card__title {
+  max-width: 100%;
+  margin: 0;
+  font-family: var(--font-playful, "DynaPuff", sans-serif);
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.ui-card__content {
+  max-width: 100%;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.ui-card__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 0.25rem;
+}

@@ -1,6 +1,6 @@
 {
   "username": {
-    "label": "Nume ultilizator",
+    "label": "Nume de utilizator",
     "placeholder": "utilizator123"
   },
   "email": {
@@ -8,11 +8,11 @@
     "placeholder": "exemplu@gmail.com"
   },
   "password": {
-    "label": "Parola",
-    "placeholder": "Parola puternica"
+    "label": "Parolă",
+    "placeholder": "O parolă puternică"
   },
   "confirmPassword": {
-    "label": "Confirma Parola",
-    "placeholder": "Confirma parola puternica"
+    "label": "Confirmă parola",
+    "placeholder": "Introdu parola din nou"
   }
 }

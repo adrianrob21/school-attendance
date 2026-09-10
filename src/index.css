@@ -1,1 +1,12 @@
 @import "tailwindcss";
+@import "./ui/assets/fonts/fonts.css";
+@import "./ui/assets/styles/meadow-background.css";
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-width: 320px;
+}

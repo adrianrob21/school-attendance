@@ -1,0 +1,33 @@
+.attendance-ladybug {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 1190 / 990;
+  overflow: visible;
+  mix-blend-mode: multiply;
+}
+
+.attendance-ladybug__mouth,
+.attendance-ladybug__eyebrow {
+  fill: none;
+  stroke: #1d1711;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.attendance-ladybug__mouth {
+  stroke-width: 17;
+}
+
+.attendance-ladybug__eyebrow {
+  stroke-width: 12;
+}
+
+.attendance-ladybug__question {
+  color: #514129;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 23;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

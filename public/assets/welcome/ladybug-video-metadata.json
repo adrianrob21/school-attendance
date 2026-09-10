@@ -1,0 +1,25 @@
+{
+  "source": "No_I_want_a_video_please.mp4",
+  "sourceWidth": 1280,
+  "sourceHeight": 720,
+  "sourceDuration": 10.005,
+  "frameCount": 120,
+  "width": 256,
+  "height": 256,
+  "cols": 10,
+  "rows": 12,
+  "duration": 10,
+  "fps": 12,
+  "crop": {
+    "x": 240,
+    "y": 10,
+    "width": 700,
+    "height": 700
+  },
+  "alpha": true,
+  "key": {
+    "dominanceMin": 12,
+    "dominanceMax": 70,
+    "despill": true
+  }
+}

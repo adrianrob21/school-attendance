@@ -83,12 +83,18 @@ const SignIn = () => {
   const translateError = translateFormError.bind(null, translate);
 
   return (
-    <div className="flex flex-col mt-4 w-full items-center">
-      <h1 className="text-center text-2xl">Sign In</h1>
-      <div className="flex flex-col gap-4 w-1/3">
+    <div className="flex flex-col mt-4 w-full items-center gap-6 px-6 py-8">
+      <h1 className="text-center text-2xl">
+        {translate("general:auth.signIn")}
+      </h1>
+      <div className="flex flex-col gap-5 w-full max-w-md">
         {INPUTS.map(renderInput.bind(null, control, translateError, translate))}
-        <button onClick={onSubmit} type="button">
-          Submit
+        <button
+          className="min-h-12 rounded-xl border px-5 py-3 text-lg"
+          onClick={onSubmit}
+          type="button"
+        >
+          {translate("general:auth.submit")}
         </button>
       </div>
     </div>

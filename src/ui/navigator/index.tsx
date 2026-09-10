@@ -18,7 +18,7 @@ const Navigator = () => {
     createStore().then(setStore);
   }, []);
 
-  if (!store) return <h1>LOADING...</h1>;
+  if (!store) return <h1>Se încarcă…</h1>;
 
   return (
     <Provider store={store}>

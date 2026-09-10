@@ -7,7 +7,8 @@ import ro from "./ro";
 // eslint-disable-next-line react-hooks/rules-of-hooks
 I18n.use(initReactI18next).init({
   debug: true,
-  fallbackLng: "en",
+  lng: "ro",
+  fallbackLng: "ro",
   interpolation: {
     escapeValue: false,
   },

@@ -8,6 +8,9 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "serve": "node server/index.mjs",
+    "voice:setup": "node server/setupVoice.mjs",
+    "test:voice-server": "node --test server/studentVoice.test.mjs",
     "prepare": "husky"
   },
   "dependencies": {
