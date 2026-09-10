@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: school-attendance
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: standard
+    region: frankfurt
+    healthCheckPath: /
+    autoDeploy: true
