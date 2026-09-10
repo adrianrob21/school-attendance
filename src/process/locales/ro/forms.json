@@ -1,0 +1,18 @@
+{
+  "username": {
+    "label": "Nume ultilizator",
+    "placeholder": "utilizator123"
+  },
+  "email": {
+    "label": "E-mail",
+    "placeholder": "exemplu@gmail.com"
+  },
+  "password": {
+    "label": "Parola",
+    "placeholder": "Parola puternica"
+  },
+  "confirmPassword": {
+    "label": "Confirma Parola",
+    "placeholder": "Confirma parola puternica"
+  }
+}

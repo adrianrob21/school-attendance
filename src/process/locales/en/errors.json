@@ -1,0 +1,7 @@
+{
+  "form": {
+    "invalidEmail": "Your email is invalid",
+    "min5Chars": "It must contain 5 or more characters",
+    "passwordsWontMatch": "The passwords don't match"
+  }
+}

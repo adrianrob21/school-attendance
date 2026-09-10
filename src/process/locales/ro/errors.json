@@ -1,0 +1,7 @@
+{
+  "form": {
+    "invalidEmail": "E-mailul dumneavoastra nu este valid",
+    "min5Chars": "Trebuie sa contina 5 sau mai multe caractere",
+    "passwordsWontMatch": "Parolele sunt diferite"
+  }
+}

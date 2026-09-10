@@ -1,0 +1,11 @@
+{
+  "changeLanguageRO": "Schimba limba in Romana",
+  "changeLanguageEN": "Schimba limba in Engleza",
+  "currentLanguage": "Limba curenta: {{language}}",
+  "ro": "Romana",
+  "en": "Engleza",
+  "increment": "Incrementeaza",
+  "decrement": "Decrementeaza",
+  "incrementByAmount": "Incrementeaza cu un numar",
+  "incrementWithSaga": "Incrementeaza cu SAGA"
+}

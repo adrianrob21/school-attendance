@@ -1,0 +1,11 @@
+{
+  "changeLanguageRO": "Change Language to Romanian",
+  "changeLanguageEN": "Change Language to English",
+  "ro": "Romanian",
+  "en": "English",
+  "increment": "Increment",
+  "currentLanguage": "Current Language: {{language}}",
+  "decrement": "Decrement",
+  "incrementByAmount": "Increment by amount",
+  "incrementWithSaga": "Increment with SAGA"
+}

@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2023",
+    "useDefineForClassFields": true,
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "types": ["vite/client", "node"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    /* Paths */
+    "paths": {
+      "Components/*": ["./src/ui/components/*"],
+      "Components": ["./src/ui/components"],
+      "Assets/*": ["./src/ui/assets/*"],
+      "Assets": ["./src/ui/assets"],
+      "Navigator/*": ["./src/ui/navigator/*"],
+      "Navigator": ["./src/ui/navigator"],
+      "Pages/*": ["./src/ui/pages/*"],
+      "Pages": ["./src/ui/pages"],
+
+      "ReduxStore/*": ["./src/process/redux-store/*"],
+      "ReduxStore": ["./src/process/redux-store"],
+      "Api/*": ["./src/process/api/*"],
+      "Api": ["./src/process/api"],
+      "Sagas/*": ["./src/process/sagas/*"],
+      "Sagas": ["./src/process/sagas"],
+      "Locales/*": ["./src/process/locales/*"],
+      "Locales": ["./src/process/locales"],
+      "Constants/*": ["./src/process/constants"],
+      "Constants": ["./src/process/constants"],
+      "Reducers/*": ["./src/process/reducers/*"],
+      "Reducers": ["./src/process/reducers"],
+      "Endpoints/*": ["./src/process/endpoints/*"],
+      "Endpoints": ["./src/process/endpoints"],
+      "ValidationSchemas": ["./src/process/validationSchemas"],
+      "Hooks": ["./src/process/hooks"]
+    }
+  },
+  "include": ["src", "./configs"]
+}
