@@ -1,3 +1,14 @@
+---
+title: School Attendance
+emoji: 🐞
+colorFrom: red
+colorTo: yellow
+sdk: docker
+app_port: 7860
+pinned: false
+license: cc-by-nc-4.0
+---
+
 # Mămăruțe
 
 The attendance voice uses **Raluca High**, running locally through Piper. Install the voice with `npm run voice:setup` (Python 3.9+ and internet access required for installation), then start the app with `npm start`. Rerun setup when upgrading from earlier voice versions to install phoneme timing support. Adding or renaming a child prepares and saves both Romanian attendance clips; attendance buttons play the saved recordings. Existing children have a **Pregătește vocea** action in the student list. Use it once to replace older recordings with the corrected word endings.
