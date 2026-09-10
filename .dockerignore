@@ -1,0 +1,11 @@
+node_modules
+dist
+.venv
+models
+__pycache__
+.git
+.husky
+.env
+.env.*
+!.env.example
+:memory:.ses

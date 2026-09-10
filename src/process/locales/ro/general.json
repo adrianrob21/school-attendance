@@ -25,7 +25,7 @@
     "position": "Grupa {{current}} din {{total}}",
     "footer": "Grupe mici. Aventuri mari.",
     "groups": {
-      "ladybugs": "Buburuzele"
+      "ladybugs": "Mămăruțe"
     }
   },
   "componentPreview": {
@@ -33,7 +33,7 @@
     "title": "Card și buton",
     "intro": "Un strop de bunătate la fiecare clic.",
     "cardLabel": "Cardul grupei",
-    "ladybugs": "Buburuzele",
+    "ladybugs": "Mămăruțe",
     "enterGroup": "Intră în grupă",
     "cardCaption": "Un chip cunoscut. O primire călduroasă.",
     "buttonLabel": "Butoanele",
@@ -50,7 +50,7 @@
     "footer": "Pentru grupe mici și aventuri mari.",
     "feedback": {
       "ready": "Încearcă un buton pentru a vedea răspunsul demonstrativ.",
-      "group": "Exemplul {{count}}: Grupa Buburuzele a fost selectată.",
+      "group": "Exemplul {{count}}: Grupa Mămăruțe a fost selectată.",
       "primary": "Exemplul {{count}}: Ai apăsat Continuă.",
       "secondary": "Exemplul {{count}}: Ai apăsat Înapoi.",
       "previous": "Exemplul {{count}}: Ai apăsat săgeata înapoi.",
@@ -68,11 +68,11 @@
   "incrementWithSaga": "Mărește valoarea cu SAGA",
   "welcome": {
     "chooseGroup": "Alege o grupă",
-    "title": "Bun venit, Buburuze!",
+    "title": "Bun venit, Mămăruțelor!",
     "subtitle": "Hai alături de noi. O lume mică, plină de minuni, te așteaptă.",
     "pause": "Oprește animația",
     "resume": "Pornește animația",
-    "sayHello": "Salută buburuza",
+    "sayHello": "Salută mămăruța",
     "greetings": {
       "hello": "Bună, bună!",
       "happy": "Mă bucur să te văd!",
@@ -95,7 +95,7 @@
       "namePlaceholder": "Prenume",
       "add": "Adaugă copil",
       "remove": "Elimină pe {{name}}",
-      "empty": "Micile buburuze vor apărea aici.",
+      "empty": "Micile mămăruțe vor apărea aici.",
       "count_zero": "Niciun copil adăugat încă.",
       "count_one": "{{count}} copil adăugat.",
       "count_few": "{{count}} copii adăugați.",
@@ -165,11 +165,11 @@
     }
   },
   "students": {
-    "title": "Micile noastre buburuze",
+    "title": "Micile noastre mămăruțe",
     "back": "Înapoi la pagina de întâmpinare",
     "add": "Adaugă copil",
     "search": "Caută copii",
-    "searchPlaceholder": "Caută o mică buburuză…",
+    "searchPlaceholder": "Caută o mică mămăruță…",
     "count_zero": "Niciun copil încă",
     "count_one": "{{count}} copil",
     "count_few": "{{count}} copii",
@@ -177,17 +177,17 @@
     "emptyTitle": "Un loc pentru fiecare",
     "emptyBody": "Adaugă primul copil și privește cum crește mica ta grupă.",
     "emptyAction": "Adaugă primul copil",
-    "noResults": "Nicio buburuză nu are acest nume.",
+    "noResults": "Nicio mămăruță nu are acest nume.",
     "clearSearch": "Șterge căutarea",
     "loading": "Pregătim mica ta grupă…",
-    "rosterLabel": "Copiii din grupa Buburuzele",
+    "rosterLabel": "Copiii din grupa Mămăruțe",
     "editStudent": "Editează datele pentru {{name}}",
     "age_one": "{{count}} an",
     "age_few": "{{count}} ani",
     "age_other": "{{count}} de ani",
     "bornOn": "Data nașterii: {{date}}",
     "editor": {
-      "addTitle": "O nouă buburuză",
+      "addTitle": "O nouă mămăruță",
       "editTitle": "Editează datele copilului",
       "close": "Închide formularul",
       "fullName": "Nume complet",
@@ -201,11 +201,11 @@
       "save": "Salvează datele",
       "saving": "Se salvează…",
       "delete": "Șterge copilul",
-      "deleteTitle": "Elimini această buburuză?",
+      "deleteTitle": "Elimini această mămăruță?",
       "confirmDelete": "Da, șterge copilul",
       "deleting": "Se șterge…",
       "keepStudent": "Păstrează copilul",
-      "subtitle": "Fiecare buburuză are o poveste. Să începem cu numele.",
+      "subtitle": "Fiecare mămăruță are o poveste. Să începem cu numele.",
       "fullNamePlaceholder": "Prenume și nume",
       "photoTitle": "Un chip cunoscut",
       "replacePhoto": "Schimbă fotografia",
@@ -234,7 +234,7 @@
       "photoCrop": "Nu am putut pregăti fotografia. Încearcă din nou."
     },
     "retry": "Încearcă din nou",
-    "hint": "Alege o buburuză pentru a edita datele sau fotografia.",
+    "hint": "Alege o mămăruță pentru a edita datele sau fotografia.",
     "actions": "Opțiuni pentru {{name}}",
     "voice": {
       "ready": "Voce pregătită",
@@ -255,7 +255,7 @@
     "calendar": "Calendar",
     "manageStudents": "Gestionează copiii",
     "takeAttendance": "Fă prezența de astăzi",
-    "rosterLabel": "Prezența pentru grupa Buburuzele",
+    "rosterLabel": "Prezența pentru grupa Mămăruțe",
     "previousPage": "Copiii anteriori",
     "nextPage": "Copiii următori",
     "pagination": "Paginile copiilor",
@@ -302,7 +302,7 @@
       "unverifiedNote_few": "{{count}} copii sunt încă neverificați.",
       "unverifiedNote_other": "{{count}} de copii sunt încă neverificați.",
       "unverifiedHelp": "Copiii neverificați rămân neverificați.",
-      "complete": "Toate micile buburuze au fost verificate."
+      "complete": "Toate micile mămăruțe au fost verificate."
     }
   }
 }
