@@ -6,7 +6,7 @@
 
 A complete 2026 collection of twelve visual concepts for the Ladybugs calendar page. The user approved the initial February, June, October, and December concepts and requested pages for every month. Scope remains **visual concepts only**. They extend the approved [group carousel](concepts/group-selection-v4-carousel.png), [students page](concepts/students-page-v2.png), and [product concept](kindergarten-attendance-concept.md). Images are generated with the built-in `image_gen` tool; this document does not describe completed application changes. The original four concepts' exact generation and refinement prompts are saved in [calendar-concept-image-prompts.md](calendar-concept-image-prompts.md); the eight additional months' prompts are in [calendar-year-image-prompts.md](calendar-year-image-prompts.md).
 
-Download all twelve final monthly PNGs in the [2026 calendar concept bundle](concepts/calendar-2026.zip). January's correction prompt is saved separately in [calendar-january-v2-image-prompt.md](calendar-january-v2-image-prompt.md).
+The twelve final monthly PNGs are in [concepts/](concepts/), named `calendar-<month>-v1.png`. January's correction prompt is saved separately in [calendar-january-v2-image-prompt.md](calendar-january-v2-image-prompt.md).
 
 Retain watercolor paper, a warm ivory center, soft peach framing, rounded dark-brown lettering, cheerful meadow borders, and the familiar red-and-black ladybug. Seasonal scenery stays at the edges so date numbers remain prominent. A compact header contains **Back to group**, **Our little days**, previous/next month controls, the month and year, and **Today**.
 
