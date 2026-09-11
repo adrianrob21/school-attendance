@@ -119,5 +119,5 @@ if (!Number.isInteger(port) || port < 0 || port > 65535) {
   process.exit(1);
 }
 server.listen(port, host, () => {
-  console.log(`Mămăruțe is available at http://${host}:${server.address().port}`);
+  console.log(`Micul Catalog is available at http://${host}:${server.address().port}`);
 });

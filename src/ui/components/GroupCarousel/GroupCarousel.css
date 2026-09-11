@@ -166,6 +166,20 @@
   }
 }
 
+/* Two arrows plus the dots exceed the narrowest phones at the default gap;
+   tightening the spacing keeps every 44px target on one row. */
+@media (max-width: 380px) {
+  .group-carousel__navigation {
+    gap: 0.25rem;
+    width: 100%;
+  }
+
+  .group-carousel__dots {
+    flex: 1;
+    justify-content: space-evenly;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .group-carousel__mascot {
     animation: none;

@@ -412,6 +412,80 @@ test("a preparing record left by a reload becomes retryable without writing or f
   assert.equal(requests.length, 0);
 });
 
+test("a generation orphaned by a reload resumes instead of needing a retry", async () => {
+  const { repository, values, requests } = setup();
+  const notifications: string[] = [];
+  repository.subscribeStudentVoices(() => {
+    notifications.push(
+      (values.get(voiceKey) as { state: string })?.state || "deleted",
+    );
+  });
+  values.set(voiceKey, {
+    name: student.fullName,
+    voiceId: "raluca-high-v3",
+    state: "preparing",
+    requestId: "old-session",
+  });
+  const resume = repository.resumeStudentVoice("ladybugs", student);
+  await flush();
+  assert.equal(requests.length, 1);
+  assert.deepEqual(JSON.parse(requests[0].options.body), {
+    name: student.fullName,
+  });
+  assert.equal(
+    (await repository.loadStudentVoice("ladybugs", "ana"))?.state,
+    "preparing",
+  );
+  requests[0].resolve(validResponse());
+  await resume;
+  assert.equal(
+    (await repository.loadStudentVoice("ladybugs", "ana"))?.state,
+    "ready",
+  );
+  assert.deepEqual(notifications, ["preparing", "ready"]);
+});
+
+test("resuming leaves ready, errored, renamed and live records untouched", async () => {
+  const ready = {
+    name: student.fullName,
+    voiceId: "raluca-high-v3",
+    state: "ready",
+    requestId: "done",
+    present: new Blob([presentBytes], { type: "audio/wav" }),
+    absent: new Blob([absentBytes], { type: "audio/wav" }),
+  };
+  const errored = {
+    name: student.fullName,
+    voiceId: "raluca-high-v3",
+    state: "error",
+    requestId: "failed",
+  };
+  const renamed = {
+    name: "Ana Popescu",
+    voiceId: "raluca-high-v3",
+    state: "preparing",
+    requestId: "old-session",
+  };
+  for (const stored of [ready, errored, renamed, undefined]) {
+    const { repository, values, requests } = setup();
+    if (stored) values.set(voiceKey, stored);
+    await repository.resumeStudentVoice("ladybugs", student);
+    assert.equal(requests.length, 0);
+    assert.deepEqual(values.get(voiceKey), stored);
+  }
+});
+
+test("resuming never starts a second request beside a live generation", async () => {
+  const { repository, requests } = setup();
+  const prepare = repository.prepareStudentVoice("ladybugs", student);
+  await flush();
+  assert.equal(requests.length, 1);
+  await repository.resumeStudentVoice("ladybugs", student);
+  assert.equal(requests.length, 1);
+  requests[0].resolve(validResponse());
+  await prepare;
+});
+
 test("failed audio and error-state commits clear pending work and notify retryable failure", async () => {
   const { repository, values, requests, failCommits } = setup();
   let notifications = 0;

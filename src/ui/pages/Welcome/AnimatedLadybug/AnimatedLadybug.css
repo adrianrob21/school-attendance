@@ -9,6 +9,15 @@
   animation: ladybug-video-frames 10s step-end infinite;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .animated-ladybug {
+    background-image: url("/assets/welcome/ladybug-video-poster.webp");
+    background-size: contain;
+    background-position: center;
+    animation: none;
+  }
+}
+
 @keyframes ladybug-video-frames {
   0% {
     background-position: 0% 0%;

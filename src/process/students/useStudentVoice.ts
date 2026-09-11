@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
 
+import {
+  loadStudentVoice,
+  resumeStudentVoice,
+  subscribeStudentVoices,
+} from "./voice";
 import type { Student } from "./types";
 import type { StudentVoice } from "./voice";
-import { loadStudentVoice, subscribeStudentVoices } from "./voice";
 
 type VoiceSnapshot = {
   key: string;
@@ -44,6 +48,12 @@ export const useStudentVoice = (
 
     // Subscribe before reading so a preparation finishing during the read is seen.
     const unsubscribe = subscribeStudentVoices(() => void reload());
+    // A reload can orphan a generation that was still running; pick it back up
+    // so the teacher is not asked to retry work the backend may already be doing.
+    // Resuming republishes "preparing", which reloads over any orphaned error.
+    void resumeStudentVoice(groupId, { id: studentId, fullName: name }).catch(
+      () => {},
+    );
     void reload();
 
     return () => {

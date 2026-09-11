@@ -34,7 +34,7 @@ const CalendarArt = ({
       viewBox={`${x - 135} ${y - 135} 270 270`}
     >
       <image
-        href="/assets/calendar/seasonal-markers.png"
+        href="/assets/calendar/seasonal-markers.webp"
         width="1254"
         height="1254"
       />

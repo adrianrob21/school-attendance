@@ -1,9 +1,10 @@
 .meadow-background {
-  --meadow-tablet: url("/assets/backgrounds/group-selection-summer-tablet.png");
-  --meadow-tablet-landscape: url("/assets/backgrounds/group-selection-summer-tablet-landscape.png");
-  --meadow-landscape: url("/assets/backgrounds/group-selection-summer.png");
-  --meadow-desktop: url("/assets/backgrounds/group-selection-summer-desktop.png");
-  --meadow-ultrawide: url("/assets/backgrounds/group-selection-summer-ultrawide.png");
+  --meadow-phone: url("/assets/backgrounds/group-selection-summer-phone.webp");
+  --meadow-tablet: url("/assets/backgrounds/group-selection-summer-tablet.webp");
+  --meadow-tablet-landscape: url("/assets/backgrounds/group-selection-summer-tablet-landscape.webp");
+  --meadow-landscape: url("/assets/backgrounds/group-selection-summer.webp");
+  --meadow-desktop: url("/assets/backgrounds/group-selection-summer-desktop.webp");
+  --meadow-ultrawide: url("/assets/backgrounds/group-selection-summer-ultrawide.webp");
   --meadow-image: var(--meadow-tablet-landscape);
 
   position: relative;
@@ -12,27 +13,30 @@
 }
 
 .meadow-background[data-season="spring"] {
-  --meadow-tablet: url("/assets/backgrounds/group-selection-spring-tablet.png");
-  --meadow-tablet-landscape: url("/assets/backgrounds/group-selection-spring-tablet-landscape.png");
-  --meadow-landscape: url("/assets/backgrounds/group-selection-spring.png");
-  --meadow-desktop: url("/assets/backgrounds/group-selection-spring-desktop.png");
-  --meadow-ultrawide: url("/assets/backgrounds/group-selection-spring-ultrawide.png");
+  --meadow-phone: url("/assets/backgrounds/group-selection-spring-phone.webp");
+  --meadow-tablet: url("/assets/backgrounds/group-selection-spring-tablet.webp");
+  --meadow-tablet-landscape: url("/assets/backgrounds/group-selection-spring-tablet-landscape.webp");
+  --meadow-landscape: url("/assets/backgrounds/group-selection-spring.webp");
+  --meadow-desktop: url("/assets/backgrounds/group-selection-spring-desktop.webp");
+  --meadow-ultrawide: url("/assets/backgrounds/group-selection-spring-ultrawide.webp");
 }
 
 .meadow-background[data-season="autumn"] {
-  --meadow-tablet: url("/assets/backgrounds/group-selection-autumn-tablet.png");
-  --meadow-tablet-landscape: url("/assets/backgrounds/group-selection-autumn-tablet-landscape.png");
-  --meadow-landscape: url("/assets/backgrounds/group-selection-autumn.png");
-  --meadow-desktop: url("/assets/backgrounds/group-selection-autumn-desktop.png");
-  --meadow-ultrawide: url("/assets/backgrounds/group-selection-autumn-ultrawide.png");
+  --meadow-phone: url("/assets/backgrounds/group-selection-autumn-phone.webp");
+  --meadow-tablet: url("/assets/backgrounds/group-selection-autumn-tablet.webp");
+  --meadow-tablet-landscape: url("/assets/backgrounds/group-selection-autumn-tablet-landscape.webp");
+  --meadow-landscape: url("/assets/backgrounds/group-selection-autumn.webp");
+  --meadow-desktop: url("/assets/backgrounds/group-selection-autumn-desktop.webp");
+  --meadow-ultrawide: url("/assets/backgrounds/group-selection-autumn-ultrawide.webp");
 }
 
 .meadow-background[data-season="winter"] {
-  --meadow-tablet: url("/assets/backgrounds/group-selection-winter-tablet.png");
-  --meadow-tablet-landscape: url("/assets/backgrounds/group-selection-winter-tablet-landscape.png");
-  --meadow-landscape: url("/assets/backgrounds/group-selection-winter.png");
-  --meadow-desktop: url("/assets/backgrounds/group-selection-winter-desktop.png");
-  --meadow-ultrawide: url("/assets/backgrounds/group-selection-winter-ultrawide.png");
+  --meadow-phone: url("/assets/backgrounds/group-selection-winter-phone.webp");
+  --meadow-tablet: url("/assets/backgrounds/group-selection-winter-tablet.webp");
+  --meadow-tablet-landscape: url("/assets/backgrounds/group-selection-winter-tablet-landscape.webp");
+  --meadow-landscape: url("/assets/backgrounds/group-selection-winter.webp");
+  --meadow-desktop: url("/assets/backgrounds/group-selection-winter-desktop.webp");
+  --meadow-ultrawide: url("/assets/backgrounds/group-selection-winter-ultrawide.webp");
 }
 
 .meadow-background::before {
@@ -51,6 +55,12 @@
 @media (max-aspect-ratio: 1 / 1) {
   .meadow-background {
     --meadow-image: var(--meadow-tablet);
+  }
+}
+
+@media (max-aspect-ratio: 1 / 1) and (max-width: 540px) {
+  .meadow-background {
+    --meadow-image: var(--meadow-phone);
   }
 }
 

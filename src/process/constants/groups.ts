@@ -4,7 +4,7 @@ export const KINDERGARTEN_GROUPS = [
   {
     id: "ladybugs",
     nameKey: "groupSelection.groups.ladybugs",
-    illustrationSrc: "/assets/mascots/ladybug.png",
+    illustrationSrc: "/assets/mascots/ladybug.webp",
     tone: "rose",
     welcomePath: WELCOME_PATH,
   },

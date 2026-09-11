@@ -165,7 +165,7 @@
 
 @media (max-width: 540px) {
   .calendar-month-picker {
-    inline-size: calc(100vw - 1rem);
+    inline-size: calc(100dvw - 1rem);
     max-block-size: calc(100dvh - 1rem);
     padding: 1.125rem;
     border-radius: 1.5rem;
@@ -182,8 +182,22 @@
   }
 
   .calendar-month-picker .calendar-month-picker__art {
+    max-inline-size: 100%;
     inline-size: 3.5rem;
     block-size: 3.5rem;
+  }
+}
+
+/* Three columns leave too little room for the longer month names
+   ("septembrie", "noiembrie"), which then break mid-word. */
+@media (max-width: 400px) {
+  .calendar-month-picker__months {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .calendar-month-picker__month {
+    min-block-size: 5.5rem;
+    overflow-wrap: normal;
   }
 }
 

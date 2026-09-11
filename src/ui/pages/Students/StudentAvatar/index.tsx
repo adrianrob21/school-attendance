@@ -16,7 +16,7 @@ const StudentAvatar = ({ photoDataUrl, className }: StudentAvatarProps) => {
         viewBox="40 125 1190 990"
         focusable="false"
       >
-        <image href="/assets/mascots/ladybug.png" width="1254" height="1254" />
+        <image href="/assets/mascots/ladybug.webp" width="1254" height="1254" />
       </svg>
       {photoDataUrl && (
         <svg

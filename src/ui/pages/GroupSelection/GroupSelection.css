@@ -146,10 +146,14 @@
 
 @media (max-width: 599px) {
   .group-selection {
-    --group-card-width: 340px;
-    --group-card-title-size: 34px;
+    /* Let the card follow the viewport instead of a fixed width that
+       overflows the narrowest phones. */
+    --group-card-width: 100%;
+    --group-card-padding: 16px;
+    --group-card-art-height: clamp(120px, 22svh, 180px);
+    --group-card-title-size: 30px;
 
-    padding-inline: 20px;
+    padding-inline: 14px;
   }
 
   .group-selection__header p {

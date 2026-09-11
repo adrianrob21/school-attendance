@@ -2,7 +2,9 @@
   position: relative;
   isolation: isolate;
   min-height: 100svh;
-  overflow: hidden;
+  /* Clips the ladybug's off-screen arrival without trapping content that
+     overflows the fold on short phones. */
+  overflow-x: clip;
   padding: 70px 30px 48px;
   color: #35271f;
   font-family: ui-rounded, "Trebuchet MS", sans-serif;
@@ -73,7 +75,7 @@
   display: block;
   width: 31%;
   aspect-ratio: 1;
-  background: url("/assets/welcome/garden-layers-v1.png") 0% 100% / 300% 200%
+  background: url("/assets/welcome/garden-layers-v1.webp") 0% 100% / 300% 200%
     no-repeat;
   mix-blend-mode: multiply;
   opacity: 0.6;

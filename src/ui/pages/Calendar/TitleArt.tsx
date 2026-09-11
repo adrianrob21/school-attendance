@@ -32,7 +32,7 @@ const TitleArt = ({
       viewBox={`${x - 160} ${y - 160} 320 320`}
     >
       <image
-        href="/assets/calendar/seasonal-title-decorations.png"
+        href="/assets/calendar/seasonal-title-decorations.webp"
         width="1448"
         height="1086"
       />

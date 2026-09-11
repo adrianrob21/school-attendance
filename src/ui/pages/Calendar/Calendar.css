@@ -424,6 +424,29 @@
       max(10px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
   }
 
+  /* The trail is taller than a short phone screen, so it scrolls inside the
+     paper rather than pushing the legend past the fold. */
+  .calendar-page__paper {
+    overflow-y: auto;
+  }
+
+  .calendar-trail[data-layout="compact"] {
+    flex-basis: 460px;
+    min-block-size: 460px;
+  }
+
+  /* Day markers on the outer columns reach past the trail; clip sideways only,
+     so the artwork above and below each day still shows. */
+  .calendar-trail {
+    overflow-x: clip;
+  }
+
+  /* Keep the marker beside its day (the serpentine rows leave no vertical
+     room), but tuck it closer so the first column stays on screen. */
+  .calendar-trail[data-layout="compact"] .calendar-trail__mascot {
+    left: calc(var(--day-size) * -0.78);
+  }
+
   .calendar-page__header {
     grid-template-columns: 44px minmax(0, 1fr);
     gap: 10px;

@@ -248,7 +248,13 @@ const Calendar = () => {
                         className="calendar-trail__mascot"
                         aria-hidden="true"
                       >
-                        <img alt="" src="/assets/mascots/ladybug.png" />
+                        <img
+                          alt=""
+                          src="/assets/mascots/ladybug.webp"
+                          width={1254}
+                          height={1254}
+                          decoding="async"
+                        />
                         <span>{translate("calendar.today")}</span>
                       </span>
                     )}

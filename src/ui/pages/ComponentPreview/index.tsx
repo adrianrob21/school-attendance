@@ -52,7 +52,7 @@ const ComponentPreview = () => {
                 alt=""
                 className="component-preview__mascot"
                 height={1024}
-                src="/assets/mascots/ladybug.png"
+                src="/assets/mascots/ladybug.webp"
                 width={1024}
               />
             }

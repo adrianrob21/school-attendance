@@ -10,6 +10,8 @@ export type StudentVoice = {
 };
 
 const MAX_AUDIO_BYTES = 2 * 1024 * 1024;
+// The backend gives up at 90s; outlast it so its own timeout reply is read.
+const REQUEST_TIMEOUT_MS = 100_000;
 const VOICE_ID = "raluca-high-v3";
 const AUDIO_MIME_TYPE = "audio/wav";
 const STALE_REQUEST = new Error("The voice request was superseded.");
@@ -175,7 +177,7 @@ const prepareVoice = async (key: string, name: string, requestId: string) => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name }),
-      signal: AbortSignal.timeout(90_000),
+      signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
     });
     if (!response.ok)
       throw new Error("The student's voice could not be prepared.");
@@ -238,6 +240,25 @@ export const prepareStudentVoice = async (
     }
   });
   return pending.promise;
+};
+
+export const resumeStudentVoice = async (
+  groupId: string,
+  student: { id: string; fullName: string },
+): Promise<void> => {
+  const key = storageKey(groupId, student.id);
+  const name = student.fullName.normalize("NFC").trim().replace(/\s+/g, " ");
+  const saved = readVoice(await get<unknown>(key));
+  // A "preparing" record with no live request was orphaned by a reload or a
+  // closed tab. The backend reuses an identical in-flight generation, so
+  // resuming attaches to that work instead of starting a second one.
+  if (
+    saved?.state !== "preparing" ||
+    saved.name !== name ||
+    pendingRequests.has(key)
+  )
+    return;
+  await prepareStudentVoice(groupId, student);
 };
 
 export const deleteStudentVoice = async (

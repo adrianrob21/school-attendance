@@ -1,11 +1,13 @@
 .today-page.students-page {
-  --attendance-row-height: 135px;
+  --attendance-row-height: 151px;
   --attendance-row-gap: 8px;
   --attendance-column-gap: 10px;
 
   position: fixed;
   inset: 0;
-  block-size: 100dvh;
+  /* Stable against the URL bar, so roster capacity is not recomputed and the
+     page does not re-paginate under a teacher mid-tap. */
+  block-size: 100svh;
   min-block-size: 0;
   padding: 10px clamp(10px, 2vw, 30px);
   overflow: hidden;
@@ -72,7 +74,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  min-block-size: 32px;
+  min-block-size: 44px;
   padding: 6px 11px;
   font-size: 12px;
   line-height: 1.3;
@@ -128,8 +130,8 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
-  min-block-size: 30px;
-  padding: 4px 8px;
+  min-block-size: 44px;
+  padding: 4px 10px;
   margin-inline-start: auto;
   border: 1px solid #dabb98;
   border-radius: 999px;
@@ -195,7 +197,7 @@
 
 .attendance-student {
   display: grid;
-  grid-template-rows: 54px 28px 20px 28px;
+  grid-template-rows: 54px 28px 20px 44px;
   justify-items: center;
   align-items: center;
   row-gap: 1px;
@@ -277,8 +279,8 @@
 
 .attendance-student__button {
   min-inline-size: 0;
-  min-block-size: 28px;
-  padding: 4px 5px;
+  min-block-size: 44px;
+  padding: 8px 5px;
   border: 1px solid #8fa878;
   border-radius: 9px;
   background: #fffdf6;
@@ -387,8 +389,8 @@
 .today-page__pagination button {
   display: grid;
   place-items: center;
-  inline-size: 28px;
-  block-size: 28px;
+  inline-size: 44px;
+  block-size: 44px;
   padding: 0;
   border: 1px solid #dabb98;
   border-radius: 50%;
@@ -424,8 +426,8 @@
   margin: 0;
 }
 .today-page .today-page__new-day .ui-button {
-  min-block-size: 28px;
-  padding: 4px 9px;
+  min-block-size: 44px;
+  padding: 4px 12px;
   font-size: 11px;
 }
 
@@ -505,13 +507,16 @@
     inset-inline-end: -23px;
   }
   .today-page .today-page__date {
-    margin: 4px -22px 0;
+    margin: 4px 0 0;
     font-size: 10px;
+    text-wrap: balance;
   }
   .today-page .students-page__back,
   .today-page .today-page__calendar {
-    min-block-size: 26px;
-    padding: 3px 8px;
+    min-block-size: 44px;
+    min-inline-size: 44px;
+    justify-content: center;
+    padding: 3px 10px;
     font-size: 10px;
   }
   .today-page .today-page__calendar {
@@ -554,13 +559,27 @@
   }
   .today-page .today-page__confirm {
     padding-inline: 12px;
-    min-block-size: 32px;
+    min-block-size: 44px;
     font-size: 12px;
   }
   .today-page .today-page__new-day {
+    flex-direction: column;
+    align-items: stretch;
     gap: 7px;
     padding: 6px 8px;
     font-size: 10px;
+  }
+  /* The badge trails the avatar on wide screens; centred, it stays inside the
+     narrow roster cell instead of being clipped by the viewport. */
+  .attendance-student__art {
+    margin-inline-end: 0;
+  }
+  .attendance-student__art .student-birthday {
+    inset-inline-end: auto;
+    inset-inline-start: 50%;
+    /* Overlap the artwork rather than the name row underneath. */
+    inset-block-end: 2px;
+    translate: -50% 0;
   }
 }
 
@@ -591,6 +610,9 @@
   .today-page__voice-toggle > span:last-child {
     display: none;
   }
+  .today-page__voice-toggle {
+    min-inline-size: 44px;
+  }
   .today-page .today-page__confirm {
     padding-inline: 8px;
     gap: 4px;
@@ -600,8 +622,8 @@
     gap: 4px;
   }
   .today-page__pagination button {
-    inline-size: 24px;
-    block-size: 24px;
+    inline-size: 44px;
+    block-size: 44px;
   }
 }
 
